@@ -1,17 +1,6 @@
-import { Heart, Mail, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useToast } from "@/components/ui/use-toast";
+import { Heart } from "lucide-react";
 
 const Index = () => {
-  const { toast } = useToast();
-
-  const handleContact = () => {
-    toast({
-      title: "Contact Information",
-      description: "Feel free to reach out to Andrew & Vadim!",
-    });
-  };
-
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -45,60 +34,6 @@ const Index = () => {
               and unconditional love. Their relationship shows that love knows no 
               boundaries and that true happiness comes from being authentic.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Photo Gallery */}
-      <section className="bg-secondary/30 py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Moments Together</h2>
-          <div className="photo-grid">
-            <div className="rounded-2xl overflow-hidden shadow-lg transition-transform hover:scale-105">
-              <img 
-                src="https://images.unsplash.com/photo-1721322800607-8c38375eef04" 
-                alt="Cozy moment" 
-                className="w-full h-[300px] object-cover"
-              />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg transition-transform hover:scale-105">
-              <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
-                alt="Happy moment" 
-                className="w-full h-[300px] object-cover"
-              />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg transition-transform hover:scale-105">
-              <img 
-                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" 
-                alt="Together" 
-                className="w-full h-[300px] object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8">Get in Touch</h2>
-          <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button 
-              onClick={handleContact}
-              className="flex items-center gap-2 bg-primary hover:bg-primary/90"
-            >
-              <Mail className="w-4 h-4" />
-              Email Us
-            </Button>
-            <Button 
-              onClick={handleContact}
-              variant="secondary"
-              className="flex items-center gap-2"
-            >
-              <Phone className="w-4 h-4" />
-              Call Us
-            </Button>
           </div>
         </div>
       </section>
